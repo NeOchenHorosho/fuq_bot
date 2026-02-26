@@ -15,6 +15,4 @@ WORKDIR /app
 
 COPY --from=builder /app/target/release/fuq_bot .
 
-ENV TELOXIDE_TOKEN=${BOT_TOKEN}
-
 CMD ["./fuq_bot"]
